@@ -17,7 +17,7 @@ var React = require('react');
 var ReactNative = require('react-native');
 var invariant = require('invariant');
 var keyMirror = require('keymirror');
-var resolveAssetSource = require('resolveAssetSource');
+// var resolveAssetSource = require('./resolveAssetSource');
 
 var {
   ReactNativeViewAttributes,
@@ -118,7 +118,7 @@ var WebViewBridge = React.createClass({
         ref={RCT_WEBVIEWBRIDGE_REF}
         key="webViewKey"
         {...props}
-        source={resolveAssetSource(source)}
+        source={source}
         style={webViewStyles}
         onLoadingStart={this.onLoadingStart}
         onLoadingFinish={this.onLoadingFinish}
