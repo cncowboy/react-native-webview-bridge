@@ -17,7 +17,7 @@ var React = require('react');
 var ReactNative = require('react-native');
 var invariant = require('invariant');
 var keyMirror = require('keymirror');
-var resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
+var resolveAssetSource = require('resolveAssetSource');
 
 var {
   ReactNativeViewAttributes,
